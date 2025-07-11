@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrigank Mauli | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+  <div class="hero">
+    <img src="attached_assets/picofme .png" alt="Mrigank Mauli" class="profile-pic">
+    <h1>Hello, I'm <span>Mrigank Mauli</span></h1>
+    <p>𝙲𝚘𝚗𝚝𝚎𝚗𝚝 𝚆𝚛𝚒𝚝𝚎𝚛 ✍️ | 𝙶𝚛𝚊𝚙𝚑𝚒𝚌 𝙳𝚎𝚐𝚒𝚗𝚎𝚛 🎨 </p>
+  <a href="work.html" class="btn" target="_blank">View My Work</a>  <a href="attached_assets/resume.pdf" class="btn" download>Download My Resume</a>
+
+  </div> 
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const thankYouMessage = document.getElementById("thank-you");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            form.style.display = "none";
+            thankYouMessage.style.display = "block";
+          } else {
+            alert("Oops! There was a problem submitting the form.");
+          }
+        } catch (error) {
+          alert("Something went wrong: " + error.message);
+        }
+      });
+    }
+  </script>
+
+
+
+  <section id="about">
+    <h2>Meet the Creator</h2>
+    <p>Hello, I am Mrigank Mauli — a dedicated content writer and graphic designer with a passion for mixing words and
+      images to create strong narratives. With the experience of writing strong content for a wide range of niches and
+      designing graphics louder than words, I feel most comfortable at the place where creativity meets communication.
+    </p>
+
+<p>"I turn ideas into scroll-stopping designs ✨"</p>
+
+
+
+    <p> Whether it's a blog, brand narrative, social media, or an all-out visual campaign, I'm committed to creating
+      work that doesn't just look good but feels right. That's simple: bring ideas to life — clearly, creatively, and
+      authentically.</p>
+
+    
+    <p>In my free time, I'm investigating new trends, throwing around new ideas, or learning tools that strengthen
+      content and design.</p>
+  </section>
+
+  <section id="Services">
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>✍️ Versatile Content Writer</strong> –I bring words to life across multiple platforms and sectors — whether writing informative blog articles, breaking down complex concepts through technical writing, or developing SEO-laden web content that delivers. With a firm understanding of audience psychology and search patterns, I maximize the impact of every word.</li> 
+      <p>📄 Medium Portfolio: <a href="https://medium.com/@mrigankmauli" target="_blank">https://medium.com/@mrigankmauli</a></p>
+      
+      <li><strong>Content Writing Services:</strong></li>
+      <p>Blog posts & feature articles</p>
+      <p>Technical documentation & guides</p>
+      <p> SEO-optimized website content</p>
+      <p>Ad copy & landing page text</p>
+
+      
+      <li><strong>🎨 Design That Speaks</strong> – Beneath words, I craft visuals that speak — where art meets strategy. From scroll-stopping social media status updates to brand-aligned templates and thumbnails, each is designed to make an impact.</li>
+      
+      <li><strong>Graphic Design</strong></li>
+        <p>YouTube thumbnails that pop</p>
+      <p>Social media creatives that engage</p>
+      <p>Posters, banners & templates that convert</p>
+      <p>Branding assets – logos, palettes, style kits</code></p>
+    </ul>
+  </section>
+ 
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>Email: <a href="mailto:your@email.com">mrigankmaulii@gmail.com</a></p>
+      <p>Medium: <a href="https://medium.com/@mrigankmauli" target="_blank">https://medium.com/@mrigankmauli</a></p>
+
+    <form id="contact-form" action="https://formspree.io/f/xblywwnj" method="POST">
+      <label>
+        Your Name:<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+
+      <label>
+        Your Email:<br>
+        <input type="email" name="_replyto" required>
+      </label><br><br>
+
+      <label>
+        Message:<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Hidden thank-you message -->
+    <div id="thank-you" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+      ✅ Thanks for your submission, Mrigank! I’ll get back to you soon.
+    </div>
+  </section>
+  <footer style="text-align:center; padding:20px; color: #777;">
+    <p>© 2025 Mrigank Mauli</p>
+    <p>
+      <a href="mailto:mrigankmaulii@gmail.com">Email</a> |
+      <a href="https://medium.com/@mrigankmauli" target="_blank">Medium</a>
+    </p>
+  </footer>
+
+
+</body>
+
+</html>

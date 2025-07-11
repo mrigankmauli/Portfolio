@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Work - Mrigank Mauli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="project-gallery">
+    <h2>My Designs</h2>
+    <div class="gallery-grid">
+
+      <!-- Replace with your own images -->
+        <div class="project-card">
+        <img src="attached_assets/Flyers.png" alt="Fashion Poster">
+        <p>Fashion Brand Poster</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Hotel posters.png" alt="Hotel Poster">
+        <p>Borcelle Hotel Weekend Offer</p>
+      </div>
+
+
+      <div class="project-card">
+        <img src="attached_assets/Elysium Estates.png" alt="Property Marketing">
+        <p>Real Estate Property Showcase</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/travel poster.png" alt="Travel Poster">
+        <p>Mountain Adventure Travel</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Zebronics.png" alt="Zebronics Headphones">
+        <p>Zebronics Wireless Headphones Ad</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Footballs.png" alt="Poster Collection">
+        <p>Young Stars Football Club Logo</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Brand poster.png" alt="Sports Logo">
+        <p>Brand Poster Collection</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/KURA FLYER.png" alt="KURA Beverage">
+        <p>KURA Beverage Brand Campaign</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Caffeine Cove.png" alt="Caffeine Cove">
+        <p>Caffeine Cove Coffee Shop Branding</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Bakers Kitchen.png" alt="Bakers Kitchen">
+        <p>Bakers Kitchen - Tasty and Nutritious</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Aunty Didi's Kitchen.png" alt="Aunty Didi's Kitchen">
+        <p>Aunty Didi's Kitchen - Food for the Soul</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/CARGO TRUCK_.png" alt="EzoLogistic">
+        <p>EzoLogistic - Cargo & Transportation</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Education.png" alt="Niva Adult School">
+        <p>Niva Adult School - Learning is Endless</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/FlYER.png" alt="Fashion Campaign">
+        <p>Wear What Makes You Cool - Fashion Campaign</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/Ipetex Studios.png" alt="Ipetex Studios">
+        <p>Ipetex Studios - Photography Logo</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/New collection.png" alt="Shop Now Campaign">
+        <p>Shop Now - New Collection Social Media</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/White and Dark Green Minimalist Recycle Logo.png" alt="Eco Life">
+        <p>Eco Life-Environmental Logo</p>
+      </div>
+
+      <div class="project-card">
+        <img src="attached_assets/ZinaLogisticsLtd.png" alt="Zina Logistics">
+        <p>Zina Logistics Ltd - Transportation Logo</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const cards = document.querySelectorAll('.project-card img');
+    cards.forEach(img => {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", () => {
+        const win = window.open();
+        win.document.write('<img src="' + img.src + '" style="width:100%;"/>');
+      });
+    });
+  </script>
+</body>
+</html>
